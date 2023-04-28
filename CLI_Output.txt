@@ -1,0 +1,63 @@
+ INFO: Start wrapper: ScanCliWrapperSettings [commandLine=[args=[Ljava.lang.String;@f667fe, options=[Lorg.apache.commons.cli.Option;@788fcafb], fileUriSet=null, scheme=https, host=synopsys-ssa.app.blackduck.com, port=443]...
+DEBUG: Remote URL: https://synopsys-ssa.app.blackduck.com:443/download/scan.cli.impl-standalone.jar, Jar Path: /home/Azure1/blackduck/tools/Black_Duck_Scan_Installation/scan.cli-2023.1.2/lib/cache/scan.cli.impl-standalone.jar, Remote MD5: 3b5471a9e1c24da636a8e2ee629942bc
+DEBUG: Cached implementation found.  Validating checksums - Calculated MD5: 3b5471a9e1c24da636a8e2ee629942bc
+DEBUG: have class c: com.blackducksoftware.scan.cli.impl.ScanClient
+DEBUG: have main method m: public static void com.blackducksoftware.scan.cli.impl.ScanClient.main(java.lang.String[])
+DEBUG: resolveRoot File(arg:/home/Azure1/infield-swagger/_work/1/s)... 
+ INFO: Start scan loop: ScanClientSettings [commandLine=[--no-prompt, --scheme, https, --host, synopsys-ssa.app.blackduck.com, --port, 443, -v, --logDir, /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1, --statusWriteDir, /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1, --project, infield-swagger, --release, 1.5, --name, s/infield-swagger/1.5 signature, --exclude, /.git/, --individualFileMatching=SOURCE, /home/Azure1/infield-swagger/_work/1/s], fileUriSet=[file://sdgvm-1/home/Azure1/infield-swagger/_work/1/s], dryRunWriteDir=No dry run file., outputFormat=null, scanId=null, dryRunReadFile=No dry run file., fsScanReadyWaitingPeriod=30, snippetMatching=false, snippetMatchingOnly=false, snippetMatchingAllSource=false, fullSnippetScan=false, uploadSource=false, individualFileMatching=source, licenseSearch=false, copyrightSearch=false, signatureGeneration=false, noSignatureGeneration=false, maxRequestBodySize=20000000, maxUpdateSize=10000, matchConfidenceThreshold=-1, minScanInterval=null, logDir=/home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1, scheme=https, host=synopsys-ssa.app.blackduck.com, port=443, name=Optional[s/infield-swagger/1.5 signature], project=Optional[infield-swagger], release=Optional[1.5], username=null, password=<NOT SHOWN>, correlationId=null, noPersistence=false, noPersistenceMode=null, retainUnmatchedFiles=null]...
+ INFO: Individual File Matching Detected: source...
+ INFO: Finalized sha1 white list: []...
+ INFO: Finalized clean sha1 white list: [js, c, h, c++, cc, cpp, cxx, hh, hpp, hxx, h++, cs, idl, rc]...
+ INFO: Initialize client for synopsys-ssa.app.blackduck.com:443
+ INFO: RestResourceClient created. SingleRelativePath = {scanId}, URI = https://synopsys-ssa.app.blackduck.com:443/api/v1/scans 
+ INFO: RestResourceClient created. SingleRelativePath = {scanId}, URI = https://synopsys-ssa.app.blackduck.com:443/api/scan-summaries 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/codelocations?q=name:{name}&limit={limit}&offset={offset}&includeErrors=true 
+ INFO: RestResourceClient created. SingleRelativePath = {scanId}, URI = https://synopsys-ssa.app.blackduck.com:443/api/v1/scanstatus 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/v1/scans/signatureVersion 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/internal/scans/{scanId}/scan-candidates?scanCandidatesParam={scanCandidatesParam}&limit={limit}&offset={offset} 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/fp-import/scans/{scanId} 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/projects?q=name:{projname}&limit={limit}&offset={offset} 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/scan-sources/{sha1} 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/bulk-sources 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/internal/scans/{scanId}/uploaded-file-data 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/internal/scans/{scanId}/string-search-matches 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/internal/scans/{scanId}/string-search 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/internal/license-vsls 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/internal/license-family-vsls 
+ INFO: RestResourceClient created. SingleRelativePath = null, URI = https://synopsys-ssa.app.blackduck.com:443/api/settings/analysis 
+ INFO: RestResourceClient created. SingleRelativePath = {scanId}, URI = https://synopsys-ssa.app.blackduck.com:443/api/intelligent-persistence-scans 
+ INFO: RestResourceClient created. SingleRelativePath = {scanId}, URI = https://synopsys-ssa.app.blackduck.com:443/api/developer-scans 
+DEBUG: path info : null
+DEBUG: url : https://synopsys-ssa.app.blackduck.com:443/api/settings/analysis
+DEBUG: authenticate via API key
+DEBUG: Generated scan name: '/home/Azure1/infield-swagger/_work/1/s' -> 'sdgvm-1-s'
+DEBUG: Adding exclude pattern: '/.git/'
+DEBUG: Clear shallow signature enabled: false)
+ INFO: Scan engine initialized with niceness set to false
+ INFO: Dry Run path: {0}
+DEBUG: path info : null
+DEBUG: url : https://synopsys-ssa.app.blackduck.com:443/api/intelligent-persistence-scans
+DEBUG: authenticate via API key
+DEBUG: path info : null
+DEBUG: url : https://synopsys-ssa.app.blackduck.com:443/api/intelligent-persistence-scans/{scanId}
+DEBUG: authenticate via API key
+DEBUG: path info : null
+DEBUG: url : https://synopsys-ssa.app.blackduck.com:443/api/intelligent-persistence-scans/{scanId}
+DEBUG: authenticate via API key
+DEBUG: path info : null
+DEBUG: url : https://synopsys-ssa.app.blackduck.com:443/api/scan-summaries/{scanId}
+DEBUG: authenticate via API key
+ INFO: ScanExecResult: ScanExecResult [scanClientSettings=ScanClientSettings [commandLine=[--no-prompt, --scheme, https, --host, synopsys-ssa.app.blackduck.com, --port, 443, -v, --logDir, /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1, --statusWriteDir, /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1, --project, infield-swagger, --release, 1.5, --name, s/infield-swagger/1.5 signature, --exclude, /.git/, --individualFileMatching=SOURCE, /home/Azure1/infield-swagger/_work/1/s], fileUriSet=[file://sdgvm-1/home/Azure1/infield-swagger/_work/1/s], dryRunWriteDir=No dry run file., outputFormat=null, scanId=null, dryRunReadFile=No dry run file., fsScanReadyWaitingPeriod=30, snippetMatching=false, snippetMatchingOnly=false, snippetMatchingAllSource=false, fullSnippetScan=false, uploadSource=false, individualFileMatching=source, licenseSearch=false, copyrightSearch=false, signatureGeneration=false, noSignatureGeneration=false, maxRequestBodySize=20000000, maxUpdateSize=10000, matchConfidenceThreshold=-1, minScanInterval=null, logDir=/home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1, scheme=https, host=synopsys-ssa.app.blackduck.com, port=443, name=Optional[s/infield-swagger/1.5 signature], project=Optional[infield-swagger], release=Optional[1.5], username=null, password=<NOT SHOWN>, correlationId=null, noPersistence=false, noPersistenceMode=null, retainUnmatchedFiles=null], result=0, dataFileName=2023_04_28_09_10_431448425478194432890.tmp, scanContainer=null, sigGenScanContainer=SigGenScanContainerView{baseDir=/home/Azure1/infield-swagger/_work/1/s, hostName=sdgvm-1, name=s/infield-swagger/1.5 signature, scannerVersion=2023.1.2, signatureVersion=7.0.0, ownerEntityKeyToken=SN#sdgvm-1-s, createdOn=2023-04-28T09:10:42.498Z, timeToScan=682, scanNodeList.size()=44, scanLeafList.size()=218, scanProblem=null, scanProblemList.size()=0}, fpScanContainer=null, stringSearchScanContainer=null, scanResult=ScanView{id=4213519f-6cbb-4448-9d2c-711b1bc7a023, scannerVersion=2023.1.2, signatureVersion=7.0.0, name=s/infield-swagger/1.5 signature, hostName=sdgvm-1, ownerEntityKeyToken=SN#sdgvm-1-s, baseDir=/home/Azure1/infield-swagger/_work/1/s, createdOn=2023-04-28T09:10:42.498Z, matchCount=0, numDirs=0, numNonDirFiles=0, statusMessage=file://sdgvm-1/home/Azure1/infield-swagger/_work/1/s, deepSystemSize=Optional.empty, timeLastModified=0, timeToPersistMs=0, scanTime=0, arguments={}, matchConfidenceThreshold=-1, debugMode=false}, scanSummary=ScanSummaryView{scanState=STARTED, transitionReason=SCAN_INGESTED, statusMessage=, createdAt=2023-04-28T09:10:43.398Z, updatedAt=2023-04-28T09:10:44.610Z, createdByUserName=Optional[kakash], scanSize=Optional[962289], serverVersion=2023.1.2, matchCount=0, directoryCount=Optional[0], fileCount=Optional[0], baseDirectory=/home/Azure1/infield-swagger/_work/1/s, hostName=sdgvm-1, scanType=SIGNATURE, errorCode=Optional.empty, retainUnmatchedFiles=false, resourceMetadata=ResourceMetadata{allow=[GET], href=https://synopsys-ssa.app.blackduck.com/api/scan-summaries/4213519f-6cbb-4448-9d2c-711b1bc7a023, links=[ResourceLink{rel=codelocation, href=https://synopsys-ssa.app.blackduck.com/api/codelocations/040f3677-68c1-4f42-9333-ce1a4c15421e}]}}, scanDate=Fri Apr 28 09:10:42 UTC 2023, scanEndDate=Fri Apr 28 09:10:44 UTC 2023, scanCreated=false]
+DEBUG: Generated scan name: '/home/Azure1/infield-swagger/_work/1/s' -> 'sdgvm-1-s'
+DEBUG: Creating output directory for new scan file: - rootDir:'/home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1' - new directory, /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1/log: ? result=true
+ INFO: Creating data output file: /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1/log/sdgvm-1-s-2023-04-28T091042.498Z.log
+ INFO: Logging to file: 
+Logging to file: /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1/log/sdgvm-1-s-2023-04-28T091042.498Z.log
+DEBUG: Creating output directory for new scan file: - rootDir:'/home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1' - new directory, /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1/output: ? result=true
+ INFO: Persist scan output to file...
+ INFO: Persisted status: /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1/output/scanOutput.json
+DEBUG: Generated scan name: '/home/Azure1/infield-swagger/_work/1/s' -> 'sdgvm-1-s'
+DEBUG: Creating output directory for new scan file: - rootDir:'/home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1' - new directory, /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1/status: ? result=true
+ INFO: Creating data output file: /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1/status/sdgvm-1-s-2023-04-28T091042.498Z.json
+ INFO: Persist ScanSummary to file...
+ INFO: Persisted status: /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1/status/sdgvm-1-s-2023-04-28T091042.498Z.json

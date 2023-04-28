@@ -1,0 +1,19 @@
+---------------------------------------
+---------------------------------------
+Data file: 2023_04_28_09_10_431448425478194432890.tmp
+Result: 0
+Start time: Fri Apr 28 09:10:42 UTC 2023
+End time: Fri Apr 28 09:10:44 UTC 2023
+Scan result 
+  -->  Scan problem count: 0
+---------------------------------------
+ScanClientSettings: ScanClientSettings [commandLine=[--no-prompt, --scheme, https, --host, synopsys-ssa.app.blackduck.com, --port, 443, -v, --logDir, /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1, --statusWriteDir, /home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1, --project, infield-swagger, --release, 1.5, --name, s/infield-swagger/1.5 signature, --exclude, /.git/, --individualFileMatching=SOURCE, /home/Azure1/infield-swagger/_work/1/s], fileUriSet=[file://sdgvm-1/home/Azure1/infield-swagger/_work/1/s], dryRunWriteDir=No dry run file., outputFormat=null, scanId=null, dryRunReadFile=No dry run file., fsScanReadyWaitingPeriod=30, snippetMatching=false, snippetMatchingOnly=false, snippetMatchingAllSource=false, fullSnippetScan=false, uploadSource=false, individualFileMatching=source, licenseSearch=false, copyrightSearch=false, signatureGeneration=false, noSignatureGeneration=false, maxRequestBodySize=20000000, maxUpdateSize=10000, matchConfidenceThreshold=-1, minScanInterval=null, logDir=/home/Azure1/blackduck/runs/2023-04-28-09-10-25-214/scan/BlackDuckScanOutput/2023-04-28_09-10-39-339_1, scheme=https, host=synopsys-ssa.app.blackduck.com, port=443, name=Optional[s/infield-swagger/1.5 signature], project=Optional[infield-swagger], release=Optional[1.5], username=null, password=<NOT SHOWN>, correlationId=null, noPersistence=false, noPersistenceMode=null, retainUnmatchedFiles=null]
+---------------------------------------
+ScanContainer
+SigGenScanContainer-->SigGenScanContainer: 
+  -->  SigGenScanContainerView{baseDir=/home/Azure1/infield-swagger/_work/1/s, hostName=sdgvm-1, name=s/infield-swagger/1.5 signature, scannerVersion=2023.1.2, signatureVersion=7.0.0, ownerEntityKeyToken=SN#sdgvm-1-s, createdOn=2023-04-28T09:10:42.498Z, timeToScan=682, scanNodeList.size()=44, scanLeafList.size()=218, scanProblem=null, scanProblemList.size()=0}
+ScanContainer-->ScanProblem: ScanContainer-->ScanProblem: 
+---------------------------------------
+Scan result: ScanView{id=4213519f-6cbb-4448-9d2c-711b1bc7a023, scannerVersion=2023.1.2, signatureVersion=7.0.0, name=s/infield-swagger/1.5 signature, hostName=sdgvm-1, ownerEntityKeyToken=SN#sdgvm-1-s, baseDir=/home/Azure1/infield-swagger/_work/1/s, createdOn=2023-04-28T09:10:42.498Z, matchCount=0, numDirs=0, numNonDirFiles=0, statusMessage=file://sdgvm-1/home/Azure1/infield-swagger/_work/1/s, deepSystemSize=Optional.empty, timeLastModified=0, timeToPersistMs=0, scanTime=0, arguments={}, matchConfidenceThreshold=-1, debugMode=false}
+---------------------------------------
+---------------------------------------
